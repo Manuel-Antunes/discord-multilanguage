@@ -12,7 +12,7 @@ class DiscordBot
   public function __construct(String $token)
   {
     $this->token = $token;
-    $this->client = new Discord(['token' => $token]);
+    $this->client = new Discord(['token' => $this->token]);
   }
 
   public function start()
