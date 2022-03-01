@@ -1,0 +1,19 @@
+{
+    "name": "taverna-de-mordor/bot",
+    "description": "a discord bot who plays rpg in text message",
+    "require": {
+        "team-reflex/discord-php": "^7.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TavernaDeMordor\\Bot\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Manuel-Antunes",
+            "email": "nerdbroz2@gmail.com"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "taverna-de-mordor-discord-js",
+  "version": "1.0.0",
+  "description": "a discord bot who plays rpg in text message",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "test",
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/main.ts",
+    "start": "node dist/main.js",
+    "build": "tsc"
+  },
+  "author": "Manuel-Antunes",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.5.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.2"
+  }
+}
