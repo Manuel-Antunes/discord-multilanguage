@@ -2,7 +2,8 @@
     "name": "taverna-de-mordor/bot",
     "description": "a discord bot who plays rpg in text message",
     "require": {
-        "team-reflex/discord-php": "^7.0"
+        "team-reflex/discord-php": "^7.0",
+        "vlucas/phpdotenv": "^5.4"
     },
     "license": "MIT",
     "autoload": {

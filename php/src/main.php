@@ -2,10 +2,13 @@
 
 use Discord\Discord;
 use TavernaDeMordor\Bot\Core\DiscordBot;
+use Dotenv\Dotenv;
 
 function main()
 {
-  $client = new Discord(["OTQ4MjM0NjQzNjQ2MzE2NjU0.Yh42VA.ik2kYLqooOi_ToQXSMHfUbuIHmQ"]);
+  $dotenv = Dotenv::createImmutable(__DIR__);
+  $dotenv->load();
+  $client = new Discord([$_ENV["DISCORD_TOKEN"]]);
   $bot = new DiscordBot($client);
   $bot->start();
 }
