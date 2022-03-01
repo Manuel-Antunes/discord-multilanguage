@@ -7,12 +7,10 @@ use Discord\Discord;
 class DiscordBot
 {
   private Discord $client;
-  private String $token;
 
-  public function __construct(String $token)
+  public function __construct(Discord $client)
   {
-    $this->token = $token;
-    $this->client = new Discord(['token' => $this->token]);
+    $this->client = $client;
   }
 
   public function start()
